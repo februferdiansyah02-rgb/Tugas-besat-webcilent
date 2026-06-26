@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner — Menu Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"> Menu Planner</a>
+        <a href="index.html" class="nav-btn">Kembali</a>
+    </nav>
+
+    <main class="planner">
+        <h1>Pilih Menu Makanan</h1>
+        
+        <div class="planner-layout">
+            <div class="table-wrap">
+                <table id="menuTable">
+                    <thead>
+                        <tr>
+                            <th>Gambar</th>
+                            <th>Nama Menu</th>
+                            <th>Kategori</th>
+                            <th>Kalori</th>
+                            <th>Harga</th>
+                            <th>Pilih</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menuBody"></tbody>
+                </table>
+            </div>
+
+            <aside class="result-panel" id="resultPanel">
+                <h2>Hasil Pilihan</h2>
+                
+                <div id="emptyState">
+                    <p>Belum ada menu dipilih</p>
+                    <p>Centang menu di tabel untuk mulai</p>
+                </div>
+
+                <div id="resultContent" style="display:none;">
+                    <div class="image-stack" id="imageStack"></div>
+                    
+                    <div class="summary">
+                        <div>
+                            <span>Total Kalori</span>
+                            <strong id="totalKalori">0 kkal</strong>
+                        </div>
+                        <div>
+                            <span>Total Harga</span>
+                            <strong id="totalHarga">Rp 0</strong>
+                        </div>
+                    </div>
+
+                    <div class="checklist">
+                        <h3>Checklist Kategori</h3>
+                        <ul id="checklist">
+                            <li id="cat-pokok">❌ Makanan Pokok</li>
+                            <li id="cat-lauk">❌ Lauk-Pauk</li>
+                            <li id="cat-sayur">❌ Sayur</li>
+                            <li id="cat-buah">❌ Buah</li>
+                            <li id="cat-minuman">❌ Minuman</li>
+                        </ul>
+                    </div>
+
+                    <div id="badge" class="badge hidden">🎉 Menu Seimbang!</div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
